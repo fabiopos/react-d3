@@ -1,11 +1,15 @@
-import "./App.css";
-import BarChartExample from "./components/BarChartExample";
+// import BarChartExample from "./components/BarChartExample";
+import TallestMenChart from "./components/TallestMenChart";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
-    <div className="App">
-      <BarChartExample />
-    </div>
+    <ChakraProvider>
+      <div className="App">
+        {/* <BarChartExample /> */}
+        <TallestMenChart />
+      </div>
+    </ChakraProvider>
   );
 }
 
